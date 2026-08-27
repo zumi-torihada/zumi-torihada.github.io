@@ -7,11 +7,20 @@ body {
 
 header {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px;
+}
+
+.artist-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 nav {
@@ -26,11 +35,12 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 section {
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
   padding: 80px 20px;
 }
 
@@ -38,8 +48,44 @@ h2 {
   font-size: 32px;
 }
 
+/* DIARY */
+
+#diary {
+  text-align: center;
+}
+
+#diary h2 {
+  margin-bottom: 40px;
+}
+
+.diary-list {
+  width: 100%;
+}
+
+.diary-list a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 20px 0;
+  border-bottom: 1px solid #555;
+}
+
+.diary-list a:hover {
+  opacity: 0.7;
+}
+
+/* CD */
+
 #cd {
   text-align: center;
+}
+
+.cd-jacket {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 30px;
 }
 
 .price {
@@ -54,43 +100,4 @@ h2 {
   color: black;
   text-decoration: none;
   margin-top: 20px;
-}
-.cd-jacket {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 30px;
-}
-.artist-image {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 30px;
-}
-
-#diary {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 80px 20px;
-}
-
-#diary h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-#diary .diary-list {
-  width: 100%;
-}
-
-#diary .diary-list a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 20px 0;
-  border-bottom: 1px solid #555;
 }

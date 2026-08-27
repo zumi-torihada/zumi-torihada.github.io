@@ -62,3 +62,11 @@ h2 {
   display: block;
   margin: 0 auto 30px;
 }
+.artist-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
+}

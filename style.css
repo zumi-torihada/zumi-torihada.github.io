@@ -115,3 +115,25 @@ h2 {
   background: white;
   color: black;
 }
+
+.sns-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.sns-links a {
+  display: block;
+  padding: 15px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sns-links a:hover {
+  background: white;
+  color: black;
+}

@@ -55,3 +55,10 @@ h2 {
   text-decoration: none;
   margin-top: 20px;
 }
+.cd-jacket {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 30px;
+}

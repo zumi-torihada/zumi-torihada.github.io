@@ -70,3 +70,26 @@ h2 {
   display: block;
   margin: 0 auto 30px;
 }
+
+#diary {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+#diary h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.diary-list a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 20px 0;
+  border-bottom: 1px solid #555;
+}
+
+.diary-list a:hover {
+  opacity: 0.7;
+}

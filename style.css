@@ -101,3 +101,17 @@ h2 {
   text-decoration: none;
   margin-top: 20px;
 }
+
+.music-button {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.music-button:hover {
+  background: white;
+  color: black;
+}

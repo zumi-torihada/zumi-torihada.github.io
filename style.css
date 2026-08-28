@@ -26,8 +26,9 @@ h1 {
 nav {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 15px 25px;
+  padding: 20px 10px;
   border-top: 1px solid #555;
   border-bottom: 1px solid #555;
 }
@@ -36,6 +37,7 @@ nav a {
   color: white;
   text-decoration: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 section {

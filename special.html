@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CD Special Content | ZUMI ARTIST SITE</title>
+  <link rel="stylesheet" href="special.css">
+</head>
+<body>
+  <header class="special-header">
+<p class="small-title">ZUMI ARTIST SITE</p>
+<h1>SPECIAL CONTENT</h1>
+<p>
+  CD購入者限定コンテンツ
+</p>
+  </header>
+  <!-- PASSWORD -->
+  <section id="login-section">
+<h2>ACCESS</h2>
+<p>
+  CDをご購入いただいた方へ。<br>
+  小冊子に記載されているACCESS CODEを入力してください。
+</p>
+<div class="password-box">
+  <input
+    type="password"
+    id="password"
+    placeholder="ACCESS CODE"
+    autocomplete="off"
+  >
+  <button onclick="checkPassword()">
+    ENTER
+  </button>
+</div>
+<p id="error-message"></p>
+  </section>
+  <!-- SPECIAL CONTENT -->
+  <main id="special-content">
+<section class="intro">
+  <p class="small-title">
+    1st CD
+  </p>
+  <h2>
+    SPECIAL CONTENT
+  </h2>
+  <p>
+    CDを手に取っていただき、ありがとうございます。
+  </p>
+  <p>
+    ここではCDに収録された楽曲を
+    デジタルでもお楽しみいただけます。
+  </p>
+</section>
+<!-- TRACK 01 -->
+<section class="track">
+  <p class="track-number">
+    TRACK 01
+  </p>
+  <h2>
+    楽曲タイトル
+  </h2>
+  <audio controls>
+    <source src="audio/track01.mp3" type="audio/mpeg">
+    お使いのブラウザでは音声を再生できません。
+  </audio>
+  <a
+    class="download-button"
+    href="audio/track01.mp3"
+    download
+  >
+    TRACK 01 DOWNLOAD
+  </a>
+</section>
+<!-- TRACK 02 -->
+<section class="track">
+  <p class="track-number">
+    TRACK 02
+  </p>
+  <h2>
+    楽曲タイトル
+  </h2>
+  <audio controls>
+    <source src="audio/track02.mp3" type="audio/mpeg">
+    お使いのブラウザでは音声を再生できません。
+  </audio>
+  <a
+    class="download-button"
+    href="audio/track02.mp3"
+    download
+  >
+    TRACK 02 DOWNLOAD
+  </a>
+</section>
+<!-- TRACK 03 -->
+<section class="track special-track">
+  <p class="track-number">
+    TRACK 03
+  </p>
+  <h2>
+    楽曲タイトル
+  </h2>
+  <p class="secret-label">
+    SPECIAL TRACK
+  </p>
+  <audio controls>
+    <source src="audio/track03.mp3" type="audio/mpeg">
+    お使いのブラウザでは音声を再生できません。
+  </audio>
+  <a
+    class="download-button"
+    href="audio/track03.mp3"
+    download
+  >
+    TRACK 03 DOWNLOAD
+  </a>
+</section>
+<!-- TRACK 03 LYRICS -->
+<section class="lyrics">
+  <p class="track-number">
+    TRACK 03
+  </p>
+  <h2>
+    LYRICS
+  </h2>
+  <div class="lyrics-text">
+    <p>
+      ここに3曲目の歌詞を入れます。
+    </p>
+    <p>
+      歌詞の2番をここに入れます。
+    </p>
+    <p>
+      サビなどをここに入れます。
+    </p>
+  </div>
+</section>
+<!-- INTERPRETATION -->
+<section class="story">
+  <p class="track-number">
+    TRACK 03
+  </p>
+  <h2>
+    STORY
+  </h2>
+  <p>
+    ここに、この曲を書いた理由や、
+    歌詞に込めた意味を記載します。
+  </p>
+  <p>
+    聴く人によって違った解釈ができるような部分について、
+    作者自身の考えを書くこともできます。
+  </p>
+</section>
+<!-- BEHIND THE SONG -->
+<section class="story">
+  <p class="track-number">
+    TRACK 03
+  </p>
+  <h2>
+    BEHIND THE SONG
+  </h2>
+  <p>
+    ここに制作時のエピソードや、
+    レコーディングについてのコメントなどを記載します。
+  </p>
+</section>
+<!-- BACK TO HOME -->
+<section class="back-home">
+  <a href="index.html">
+    ← BACK TO HOME
+  </a>
+</section>
+  </main>
+  <script>
+    function checkPassword() {
+      const password =
+        document.getElementById("password").value;
+      const correctPassword = "TORIHADA03";
+      const content =
+        document.getElementById("special-content");
+      const login =
+        document.getElementById("login-section");
+      const error =
+        document.getElementById("error-message");
+      if (password === correctPassword) {
+        login.style.display = "none";
+        content.style.display = "block";
+      } else {
+        error.textContent =
+          "ACCESS CODEが正しくありません。";
+      }
+    }
+  </script>
+</body>
+</html>
